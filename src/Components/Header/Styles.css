@@ -1,10 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
-
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Titillium Web", sans-serif;
 }
 
 :root {
@@ -18,31 +15,45 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 80px;
-	padding: 0 2rem;
-	background-color: var(--mainColor);
-	color: var(--textColor);
+	height: 130px;
+    padding-right: 3rem;
+    font-family: 'Open Sans', sans-serif;
+	background-color: #E6F1FEB2;
 }
 
+header h1{
+    color: #0066DE;
+    line-height: 31.2px;
+    letter-spacing: 3px;
+    width: 150px;
+}
+
+
 nav a {
-	margin: 0 1rem;
-	color: var(--textColor);
+	margin: 0 33px;
 	text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #474849;
+    line-height: 25.6px;
 }
 
 nav a:hover {
-	color: var(--secondaryColor);
+    border-bottom: 3px solid #0066DE;
 }
 
+a:active{
+    font-weight: 600;
+    font-size: 18px;
+}
 header .nav-btn {
 	padding: 5px;
 	cursor: pointer;
 	background: transparent;
 	border: none;
 	outline: none;
-	color: var(--textColor);
-	visibility: hidden;
-	opacity: 0;
+	color: black;
+	display: none;
 	font-size: 1.8rem;
 }
 
@@ -52,10 +63,34 @@ nav {
 	align-items: center;
 }
 
+.btn{
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fff;
+    width: 99px;
+    height: 54px;
+    border: none;
+}
+.Bn{
+    background-color: #0070F4;
+}
+
+.Bt{
+    background-color: #E6F1FEB2;
+}
+
+.Big {
+    display: flex;
+    gap: 60px;
+}
+
 @media only screen and (max-width: 1024px) {
+
+    header {
+        padding: 0 2rem;
+    }
 	header .nav-btn {
-		visibility: visible;
-		opacity: 1;
+		display: block;
 	}
 
 	header nav {
@@ -69,7 +104,7 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: var(--mainColor);
+		background-color: #0070F4;
 		transition: 1s;
 	}
 
