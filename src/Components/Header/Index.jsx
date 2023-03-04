@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 import "./Styles.css";
 import Button from "./UI/Button";
+import Button2 from "./UI/Button2";
 
 function Header() {
 	const navRef = useRef();
@@ -31,8 +32,8 @@ function Header() {
 			</button>
 
 			<div className="Big">
-				<Button  text='Sign in' bg='#E6F1FEB2'/>
-				<Button  text='Sign in' bg='#0070F4' />
+				<Button2 text='log in' />
+				<Button  text='Sign up'/>
 			</div>
 		</header>
 	);

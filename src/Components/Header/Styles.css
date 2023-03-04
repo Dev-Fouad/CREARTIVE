@@ -16,7 +16,6 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	height: 130px;
-    padding-right: 3rem;
     font-family: 'Open Sans', sans-serif;
 	background-color: #E6F1FEB2;
 }
@@ -69,17 +68,25 @@ nav {
     color: #fff;
     width: 99px;
     height: 54px;
+	font-size: 16px;
     background-color: #0070F4;
     border: none;
 }
 
-.Bt{
+.Btn{
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #0070F4;
+    width: 99px;
+	font-size: 16px;
+    height: 54px;
     background-color: #E6F1FEB2;
+    border: none;
 }
 
 .Big {
     display: flex;
-    gap: 60px;
+    gap: 30px;
 }
 
 @media only screen and (max-width: 1024px) {

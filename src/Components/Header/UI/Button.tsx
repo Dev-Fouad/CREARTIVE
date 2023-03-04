@@ -1,24 +1,13 @@
-import React ,{useState} from "react";
+import React from "react";
 import "../Styles.css";
 
-const Button = ({ text, bg }) => {
+const Button = ({ text}) => {
 
-    const [Color, color] = useState(true)
-
-    function handler(){
-        color(false)
-    }
-
-    if ( text == ) {
-        
-    }
-    
-
-  let classes = Color ? 'btn' : 'btn Bt'
-
-  return <>
-      <button className={classes} >{text}</button>
-  </>
+  return (
+    <>
+      <button className='btn'>{text}</button>
+    </>
+  );
 };
 
 export default Button;
