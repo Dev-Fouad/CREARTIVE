@@ -15,7 +15,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 130px;
+	height: 150px;
 	padding-top: 2rem;
 	padding-left: 80px;
 	padding-right: 80px;
@@ -79,9 +79,15 @@ nav {
     color: #fff;
     width: 99px;
     height: 54px;
+	font-weight: 600;
 	font-size: 16px;
     background-color: #0070F4;
     border: none;
+	font-family: 'Open Sans', sans-serif;
+}
+.btn:hover{
+	box-shadow: 0px 6px 21px 0px #0070F426;
+
 }
 
 .Btn{
@@ -89,16 +95,17 @@ nav {
     border-radius: 8px;
     color: #0070F4;
     width: 99px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 	font-size: 16px;
     height: 54px;
-    background-color: #E6F1FEB2;
+    background-color: transparent;
     border: none;
 }
 
 .Big {
     display: flex;
     gap: 30px;
-	/* margin-left: 17rem; */
 }
 
 @media only screen and (max-width: 1024px) {
@@ -138,11 +145,18 @@ nav {
 	
 	nav a {
 		font-size: 1.5rem;
-		
+		margin: 20px 0;
+		color: black;
 	}
+
 
 	.ta{
 		display: flex;
 		flex-direction: column;
+	}
+
+	nav a:hover {
+		border-bottom: none;
+		/* display: none; */
 	}
 }

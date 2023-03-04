@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import {FaTimes } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
-
+import Logo from "../Assets/Group 289295 (1).png"
 import "./Styles.css";
 import Button from "./UI/Button";
 import Button2 from "./UI/Button2";
@@ -15,16 +15,16 @@ function Header() {
 
 	return (
 		<header>
-			<h1>CREARTIVE</h1>
+			<img src={Logo}></img>
 
 			<div className="Head">
 				<nav ref={navRef}>
-					
+
 					<div className="ta">
 						<a href="/#">Home</a>
-						<a href="/#">My work</a>
+						<a href="/#">About Us</a>
+						<a href="/#">Pricing</a>
 						<a href="/#">Blog</a>
-						<a href="/#">About me</a>
 						
 					</div>
 			
@@ -35,7 +35,7 @@ function Header() {
 					</button>
 
 					<div className="Big">
-						<Button2 text='log in' />
+						<Button2 text='Log in' />
 						<Button  text='Sign up'/>
 					</div>
 				</nav>
