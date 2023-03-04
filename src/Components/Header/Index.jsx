@@ -1,5 +1,6 @@
 import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import {FaTimes } from "react-icons/fa";
+import { AiOutlineMenu } from "react-icons/ai";
 
 import "./Styles.css";
 import Button from "./UI/Button";
@@ -15,28 +16,39 @@ function Header() {
 	return (
 		<header>
 			<h1>CREARTIVE</h1>
-			<nav ref={navRef}>
-				<a href="/#">Home</a>
-				<a href="/#">My work</a>
-				<a href="/#">Blog</a>
-				<a href="/#">About me</a>
-				<button
-					className="nav-btn nav-close-btn"
-					onClick={showNavbar}>
-					<FaTimes />
-				</button>
-			</nav>
+
+			<div className="Head">
+				<nav ref={navRef}>
+					
+					<div className="ta">
+						<a href="/#">Home</a>
+						<a href="/#">My work</a>
+						<a href="/#">Blog</a>
+						<a href="/#">About me</a>
+						
+					</div>
+			
+					<button
+						className="nav-btn nav-close-btn"
+						onClick={showNavbar}>
+						<FaTimes />
+					</button>
+
+					<div className="Big">
+						<Button2 text='log in' />
+						<Button  text='Sign up'/>
+					</div>
+				</nav>
+				
+			</div>
 
 			<button className="nav-btn" onClick={showNavbar}>
-				<FaBars />
+				<AiOutlineMenu />
 			</button>
 
-			<div className="Big">
-				<Button2 text='log in' />
-				<Button  text='Sign up'/>
-			</div>
 		</header>
 	);
 }
 
 export default Header;
+

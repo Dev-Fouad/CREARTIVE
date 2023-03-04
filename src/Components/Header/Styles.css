@@ -16,6 +16,9 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	height: 130px;
+	padding-top: 2rem;
+	padding-left: 80px;
+	padding-right: 80px;
     font-family: 'Open Sans', sans-serif;
 	background-color: #E6F1FEB2;
 }
@@ -46,14 +49,22 @@ a:active{
     font-size: 18px;
 }
 header .nav-btn {
-	padding: 5px;
 	cursor: pointer;
 	background: transparent;
 	border: none;
+	height: 30px;
 	outline: none;
-	color: black;
 	display: none;
 	font-size: 1.8rem;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.Head{
+	width: 70%; 
 }
 
 header div,
@@ -87,22 +98,23 @@ nav {
 .Big {
     display: flex;
     gap: 30px;
+	/* margin-left: 17rem; */
 }
 
 @media only screen and (max-width: 1024px) {
 
     header {
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
 	header .nav-btn {
 		display: block;
 	}
-
+	
 	header nav {
 		position: fixed;
-		top: -35rem;
+		top: -53rem;
 		left: 0rem;
-		height: 50%;
+		height: 70%;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -114,7 +126,7 @@ nav {
 	}
 
 	header .responsive_nav {
-        top: -0;
+        top: 0;
     }
 
 	nav .nav-close-btn {
@@ -123,7 +135,14 @@ nav {
 		right: 2rem;
 	}
 
+	
 	nav a {
 		font-size: 1.5rem;
+		
+	}
+
+	.ta{
+		display: flex;
+		flex-direction: column;
 	}
 }
