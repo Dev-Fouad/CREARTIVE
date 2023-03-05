@@ -21,19 +21,16 @@ function Header() {
 				<nav ref={navRef}>
 
 					<div className="ta">
-						<a href="/#">Home</a>
-						<a href="/#">About Us</a>
-						<a href="/#">Pricing</a>
-						<a href="/#">Blog</a>
-						
+						<div className="at">
+							<a href="/#">Home</a>
+							<a href="/#">About Us</a>
+						</div>
+						<div className="at">
+							<a href="/#">Pricing</a>
+							<a href="/#">Blog</a>
+						</div>			
 					</div>
-			
-					<button
-						className="nav-btn nav-close-btn"
-						onClick={showNavbar}>
-						<FaTimes />
-					</button>
-
+		
 					<div className="Big">
 						<Button2 text='Log in' />
 						<Button  text='Sign up'/>
