@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import {FaTimes } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
 import Logo from "../Assets/Group 289295 (1).png"
 import "./Styles.css";
@@ -48,4 +47,3 @@ function Header() {
 }
 
 export default Header;
-
