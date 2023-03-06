@@ -14,6 +14,9 @@
 header {
 	display: flex;
 	align-items: center;
+	width: 100%;
+	z-index: 1000;
+	position: fixed;
 	justify-content: space-between;
 	height: 150px;
 	padding-top: 2rem;
@@ -122,13 +125,12 @@ nav {
 		position: fixed;
 		top: 8rem;
 		left: 60rem;
-		height: 40%;
+		height: 30%;
+		padding-bottom: 1rem;
 		width: 80%;
 		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 		gap: 0rem;
-		background-color:  #E6F1FEB2;
+		background-color: #0070F4;
 		transition: 1s;
 		border-radius: 20px;
 		z-index: 100;
@@ -147,7 +149,7 @@ nav {
 	nav a {
 		font-size: 1.5rem;
 		margin: 20px 10px;
-		color: #0070F4 ;
+		color: #191A1B;
 	}
 
 	.ta{
