@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import {FaTimes } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
 import Logo from "../Assets/Group 289295 (1).png"
 import "./Styles.css";
@@ -20,20 +21,20 @@ function Header() {
 				<nav ref={navRef}>
 
 					<div className="ta">
-						<div className="at">
-							<a href="/#">Home</a>
-							<a href="/#">About Us</a>
-						</div>
-						<div className="at">
-							<a href="/#">Pricing</a>
-							<a href="/#">Blog</a>
-						</div>			
+						<a href="/#">Home</a>
+						<a href="/#">About Us</a>
+						<a href="/#">Pricing</a>
+						<a href="/#">Blog</a>
 					</div>
 		
 					<div className="Big">
 						<Button2 text='Log in' />
 						<Button  text='Sign up'/>
 					</div>
+
+					<button className="nav-btn nav-close-btn" onClick={showNavbar}>
+                        <FaTimes />
+                    </button>
 				</nav>
 				
 			</div>

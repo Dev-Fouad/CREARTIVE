@@ -1,3 +1,4 @@
+import Footer from "./Components/Footer"
 import Header from "./Components/Header/Index"
 import { Hero } from "./Components/Hero"
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Footer  />
     </>
   )
 }
